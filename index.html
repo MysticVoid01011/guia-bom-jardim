@@ -9,72 +9,85 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
-<body> <!-- ===== NAVEGAÇÃO ===== -->
+<body>
+    <!-- ===== NAVEGAÇÃO ===== -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container"> <a class="navbar-brand fw-bold" href="#">Guia do Bairro</a> <button
-                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"> <span
-                    class="navbar-toggler-icon"></span> </button>
-            <div class="collapse navbar-collapse" id="menu">
+        <section class="container">
+            <a class="navbar-brand fw-bold" href="#">Guia do Bairro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
                     <li class="nav-item"><a class="nav-link" href="#lugares">Lugares</a></li>
                     <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav> <!-- ================================================= -->
-    <!-- SEÇÃO 1 - CAPA          responsável: Contribuidor A -->
-    <!-- ================================================= -->
+            </section>
+        </section>
+    </nav>
+
+    <!-- SEÇÃO 1 - CAPA -->
     <header id="capa" class="capa text-white text-center d-flex align-items-center">
-        <div class="container py-5"> <!-- COMEÇA AQUI: título do bairro, frase e imagem --> </div>
-    </header> <!-- ================================================= -->
-    <!-- SEÇÃO 2 - HISTÓRIA      responsável: Contribuidor B -->
-    <!-- ================================================= -->
-    <section id="historia" class="container py-5">
-        <h2 class="h3 mb-4">História e curiosidades</h2>
-        <!-- COMEÇA AQUI: 2 ou 3 parágrafos + uma lista de curiosidades -->
-    </section> <!-- ================================================= -->
-    <!-- SEÇÃO 3 - LUGARES       responsável: Contribuidor C -->
-    <!-- ================================================= -->
-    <section id="lugares" class="bg-light py-5">
-        <div class="container">
-            <h2 class="h3 mb-4">Onde comer e o que fazer</h2>
-            <div class="row g-4"> <!-- COMEÇA AQUI: cards de lugares (use col-12 col-md-6 col-lg-4) --> </div>
-        </div>
-    </section>
-    <!-- Seção de Lugares -->
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="card card-lugar h-100">
-            <div class="card-body">
-                <h5 class="card-title">Nome do lugar</h5>
-                <p class="text-secondary small mb-2">Restaurante · Rua Exemplo, 123</p>
-                <p class="card-text small"> Uma frase sobre por que vale a pena conhecer. </p>
-            </div>
-        </div>
-    </div>
-    <!-- ================================================= -->
-    <!-- SEÇÃO 4 - EQUIPE                  responsável: TODOS -->
-    <!-- cada integrante adiciona o próprio card abaixo       -->
-    <!-- ================================================= -->
-    <section id="equipe" class="container py-5">
-        <h2 class="h3 mb-4">Equipe</h2>
-        <div class="row g-4" id="lista-equipe"> <!-- ADICIONE O SEU CARD ABAIXO DESTA LINHA --> </div>
-    </section>
+        <section class="container py-5">
+            <!-- título do bairro, frase e imagem -->
+        </section>
+    </header>
+
+    <main>
+        <!-- SEÇÃO 2 - HISTÓRIA -->
+        <section id="historia" class="container py-5">
+            <h2 class="h3 mb-4">História e curiosidades</h2>
+            <!-- 2 ou 3 parágrafos + lista de curiosidades -->
+        </section>
+
+        <!-- SEÇÃO 3 - LUGARES -->
+        <section id="lugares" class="bg-light py-5">
+            <section class="container">
+                <h2 class="h3 mb-4">Onde comer e o que fazer</h2>
+                <section class="row g-4">
+                    <!-- Card de lugar -->
+                    <article class="col-12 col-md-6 col-lg-4">
+                        <section class="card card-lugar h-100">
+                            <section class="card-body">
+                                <h5 class="card-title">Nome do lugar</h5>
+                                <p class="text-secondary small mb-2">Restaurante · Rua Exemplo, 123</p>
+                                <p class="card-text small">Uma frase sobre por que vale a pena conhecer.</p>
+                            </section>
+                        </section>
+                    </article>
+                </section>
+            </section>
+        </section>
+
+        <!-- SEÇÃO 4 - EQUIPE -->
+        <section id="equipe" class="container py-5">
+            <h2 class="h3 mb-4">Equipe</h2>
+            <section class="row g-4" id="lista-equipe">
+                <!-- Card Ana Lima -->
+                <article class="col-12 col-sm-6 col-lg-3">
+                    <section class="card card-membro h-100">
+                        <section class="card-body">
+                            <h5 class="card-title mb-1">Ana Lima</h5>
+                            <p class="papel mb-2">Contribuidora — seção História</p>
+                            <a href="https://github.com/analima" class="btn btn-sm btn-outline-dark" target="_blank"
+                                rel="noopener">GitHub</a>
+                        </section>
+                    </section>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
     <footer class="bg-dark text-white-50 text-center py-4">
-        <div class="container"> <small>Curso Programador Web · Senac Mossoró/RN</small> </div>
+        <section class="container">
+            <small>Curso Programador Web · Senac Mossoró/RN</small>
+        </section>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<!-- INÍCIO card Ana Lima-->
-<div class="col-12 col-sm-6 col-lg-3">
-    <div class="card card-membro h-100">
-        <div class="card-body">
-            <h5 class="card-title mb-1">Ana Lima</h5>
-            <p class="papel mb-2">Contribuidora — seção História</p> <a href="https://github.com/analima"
-                class="btn btn-sm btn-outline-dark" target="_blank" rel="noopener">GitHub</a>
-        </div>
-    </div>
-</div> <!-- FIM card Ana Lima -->
 
-</html>
+</html>git
