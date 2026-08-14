@@ -12,6 +12,7 @@ body {
     min-height: 55vh;
     background: linear-gradient(rgba(36, 41, 47, .7), rgba(36, 41, 47, .7)), url("../img/capa.jpg") center/cover no-repeat;
     background-color: var(--cor-escura);
+    
 }
 
 .card-lugar,
